@@ -31,7 +31,7 @@ def retrieve_info(HTML):
 
 def write_data(author, name, date, topic, url, text):
     name1 = name.strip('?!.,#@$%^&*')
-    with open('./articles1/'+str(name1)+'.txt','w',encoding='utf-8-sig') as f:
+    with open('./articles/'+str(name1)+'.txt','w',encoding='utf-8-sig') as f:
         f.write('@au ' + str(author) + '\n@ti ' + str(name) + '\n@da ' + str(date) + '\n@topic ' + str(topic) + '\n@url ' + str(url) + '\n' + str(text))
     
  
